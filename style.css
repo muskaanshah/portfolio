@@ -8,6 +8,11 @@
 
 body {
 	font-family: "Raleway", sans-serif;
+	overflow-x: hidden;
+}
+
+img {
+	width: 550px;
 }
 
 .container-fluid {
@@ -28,6 +33,13 @@ body {
 
 .media li a {
 	color: white;
+}
+
+.h2-typing {
+	color: var(--dark-grey);
+	padding-top: 3rem;
+	text-align: center;
+	margin: auto;
 }
 
 .link-primary {
@@ -67,5 +79,22 @@ body {
 
 	100% {
 		width: 31ch;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	img {
+		width: 200px;
+	}
+	.h2-typing {
+		font-size: 30px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	img {
+		width: 550px;
+	}
+	.h2-typing {
+		font-size: 40px;
 	}
 }
