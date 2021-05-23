@@ -87,7 +87,7 @@ img {
 		width: 200px;
 	}
 	.h2-typing {
-		font-size: 30px;
+		font-size: 1rem;
 	}
 }
 @media only screen and (min-width: 600px) {
@@ -95,7 +95,7 @@ img {
 		width: 200px;
 	}
 	.h2-typing {
-		font-size: 30px;
+		font-size: 20%;
 	}
 }
 @media only screen and (min-width: 992px) {
@@ -103,6 +103,6 @@ img {
 		width: 550px;
 	}
 	.h2-typing {
-		font-size: 40px;
+		font-size: 3rem;
 	}
 }
