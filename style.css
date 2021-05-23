@@ -90,6 +90,14 @@ img {
 		font-size: 30px;
 	}
 }
+@media only screen and (min-width: 600px) {
+	img {
+		width: 200px;
+	}
+	.h2-typing {
+		font-size: 30px;
+	}
+}
 @media only screen and (min-width: 992px) {
 	img {
 		width: 550px;
