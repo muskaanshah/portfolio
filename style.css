@@ -63,6 +63,21 @@ h3 {
 	margin-left: 25%;
 }
 
+.link-primary1 {
+	color: white;
+	background-color: var(--primary-color);
+	border-radius: 10px;
+	border: 2px solid var(--primary-color);
+	padding: 15px;
+}
+
+.link-secondary1 {
+	border: 2px solid var(--primary-color);
+	border-radius: 10px;
+	padding: 15px;
+	color: var(--primary-color);
+}
+
 .typing-effect {
 	animation: type 4s steps(31);
 	overflow: hidden;
