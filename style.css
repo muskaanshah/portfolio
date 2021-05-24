@@ -15,6 +15,10 @@ img {
 	width: 550px;
 }
 
+h3 {
+	padding-top: 3rem;
+}
+
 .container-fluid {
 	padding-right: 0px !important;
 	padding-left: 0px !important;
@@ -48,12 +52,15 @@ img {
 	border-radius: 10px;
 	border: 2px solid var(--primary-color);
 	padding: 15px;
+	margin-left: 25%;
 }
 
 .link-secondary {
 	border: 2px solid var(--primary-color);
 	border-radius: 10px;
 	padding: 15px;
+	color: var(--primary-color);
+	margin-left: 25%;
 }
 
 .typing-effect {
@@ -70,6 +77,16 @@ img {
 .container-centre {
 	margin: auto;
 	max-width: 50%;
+}
+
+small {
+	display: block;
+	padding-top: 0.5rem;
+}
+
+.p-content {
+	padding: 1rem 0% 3rem;
+	font-size: 120%;
 }
 
 @keyframes type {
