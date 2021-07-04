@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../cssselectorquiz-style.css">
+    <title>CSS selectors quiz</title>
+</head>
+
+<body style="margin: 0;">
+    <h1 class="container-fluid text-center" style="margin: 0; padding: 1%;">Quiz on CSS selectors</h1>
+    <div id="quiz">
+        <p style="font-size: 130%;">Refer to the image and answer questions to test your understanding on CSS selectors.
+        </p>
+        <img src="../images/quest.png">
+        <div class="questions">
+            <p>1. How to select the h3 tag which has the content as 'DISNEY'?</p>
+            <input type="radio" id="a1" name="q1"> #heading<br>
+            <input type="radio" id="a2" name="q1"> h3<br>
+            <input type="radio" id="a3" name="q1"> .heading<br><br>
+
+            <p>2. How to select all the list items?</p>
+            <input type="radio" id="b1" name="q2"> li<br>
+            <input type="radio" id="b2" name="q2"> #li<br>
+            <input type="radio" id="b3" name="q2"> li:all<br><br>
+
+            <p>3. How to select all the p tags under the division id 'division2'?</p>
+            <input type="radio" id="c1" name="q3"> p<br>
+            <input type="radio" id="c2" name="q3"> #divison2, p<br>
+            <input type="radio" id="c3" name="q3"> #division2 > p<br><br>
+
+            <p>4. How to select all the p tags under the division id 'division1'?</p>
+            <input type="radio" id="d1" name="q4"> p<br>
+            <input type="radio" id="d2" name="q4"> .para<br>
+            <input type="radio" id="d3" name="q4"> #divison1, p<br><br>
+
+            <p>5. How to select every alternate p tag?</p>
+            <input type="radio" id="e1" name="q5"> div:nth-child(2n+1)<br>
+            <input type="radio" id="e2" name="q5"> nth-child(2n+1)<br>
+            <input type="radio" id="e3" name="q5"> p:nth-child(2n+1)<br><br>
+
+            <p>6. How to select the image when the mouse is hovered?</p>
+            <input type="radio" id="f1" name="q6"> img:hover<br>
+            <input type="radio" id="f2" name="q6"> .hover<br>
+            <input type="radio" id="f3" name="q6"> .hover-img<br><br>
+
+            <p>7. How to select the h4 tag to display the content 'Snow white'?</p>
+            <input type="radio" id="g1" name="q7"> h3<br>
+            <input type="radio" id="g2" name="q7"> h3 + h4<br>
+            <input type="radio" id="g3" name="q7"> div > h4<br><br>
+
+            <p>8. How to select the content 'Mickey Mouse is the cutest character.' and 'Ariel'?</p>
+            <input type="radio" id="h1" name="q8"> .class<br>
+            <input type="radio" id="h2" name="q8"> p<br>
+            <input type="radio" id="h3" name="q8"> p:first-child<br><br>
+
+            <p>9. How to select the content 'Minnie is cute' and 'Bella'?</p>
+            <input type="radio" id="i1" name="q9"> p<br>
+            <input type="radio" id="i2" name="q9"> p:nth-child(2)<br>
+            <input type="radio" id="i3" name="q9"> p:second-child<br><br>
+
+            <p>10. How to select the li tag with the content 'Goofy'?</p>
+            <input type="radio" id="j1" name="q10"> li<br>
+            <input type="radio" id="j2" name="q10"> #disney > li<br>
+            <input type="radio" id="j3" name="q10"> li:last-child<br><br>
+
+            <input type="submit" id="btn-submit" value="Submit">
+
+        </div>
+        <p id="response"></p>
+    </div>
+
+    <script src="../app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

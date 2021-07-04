@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <title>CSS SELECTORS</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid" style="margin: auto; max-width: 60%; margin-top: 6%;">
+        <h2 style="font-weight: 700; color: var(--primary-color);">CSS SELECTORS</h2>
+        <small style="display: block; margin-bottom: 10px;">May, 2021</small>
+        <div>
+            <p class="text-justify">A CSS selector is used to select the html elements so
+                that style can be applied on them. There can be multiple ways to select an element. External and
+                internal stylesheets cannot work without selectors. <br>
+                There are various kind of selectors. Given below are the most common kinds of selectors which are
+                frequently used.
+            </p>
+            <p style="color: var(--primary-color); font-size: 110%; font-weight: 600;">Before proceeding, take a small
+                quiz to test
+                your knowledge on CSS selectors. Then compare the result with after you finish learning and see how
+                much you've improved.</p>
+            <p>Don't worry if you're a beginner and have scored less in this one. This is just a practice, get learning
+                and improve your knowledge on this topic.</p><br>
+            <div class="text-center"><a class="link-primary text-white" style="margin-left: 0;"
+                    href="cssselectorquiz.html" target="_blank">Take
+                    quiz now!</a><br><br><br></div>
+            <div class="code" style="border: 2px solid var(--primary-color);">
+                <p class="pl-4 pt-3"><b>Code for reference:</b></p>
+                <code style="border:none; font-size: 110%;"><pre>
+        &lt;body&gt;
+            &lt;h3 id="h3-shows"&gt;SHOWS&lt;/h3&gt;
+                &lt;ul id="shows"&gt;
+                &lt;li&gt;Brooklyn Nine Nine&lt;/li&gt;
+                &lt;li&gt;Suits&lt;/li&gt;
+                &lt;li&gt;The Vampire Diaries&lt;/li&gt;
+                &lt;li&gt;Money Heist&lt;/li&gt;
+                &lt;li class="red"&gt;Sherlock&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div id="sitcoms"&gt;
+                &lt;p&gt;Brooklyn Nine Nine&lt;/p&gt;
+                &lt;div class="B99"&gt;
+                    &lt;p class="red"&gt;Gina Linetti is the human version of the 100 emoji.&lt;/p&gt;
+                    &lt;p&gt;I want it that way - Now number 5&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;p&gt;Friends&lt;/p&gt;
+                &lt;div class="friends"&gt;
+                    &lt;p&gt;Joey doesn't share food&lt;/p&gt;
+                    &lt;p&gt;I don't even have a 'pla'&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p&gt;This is a new Para&lt;/p&gt;
+            &lt;div id="links"&gt;
+                &lt;a href="https://google.com" target="_blank"&gt;Click here&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+                </pre></code>
+            </div><br>
+            <b>1. The simple selectors- they select the HTML elements by their tag, ID or class.</b><br><br>
+            <ol type="i">
+                <li><i>Selecting by tag name- </i></li>
+                <p>This is used to select the elements which have the same
+                    tag name. For eg, if you all want all h3 tags to be styled in one way, you can use this type of
+                    selector. This is used by just specifying the tagname alone.<br>Understanding using an
+                    example:<br></p>
+                <div class="code">
+                    <code>
+                        h3 {
+                            background-color: lightpink;
+                        }
+                    </code><br><br>
+                    The above code selects the h3 tag which has the content 'SHOWS' and produces the following
+                    result:<br>
+                    <img src="../codeexamples/eg1.png">
+                </div>
+                <li><i>Selecting by ID- </i></li>
+                <p>To select an element by ID, the '#' symbol followed by the ID name is
+                    used in the stylesheet. This is used when a particular element with a unique ID has to be
+                    styled.<br>Understanding using an example:<br></p>
+                <div class="code">
+                    <code>
+                        #h3-shows {
+                            background-color: lightgreen;
+                        }
+                    </code><br><br>
+                    The above code selects the h3-shows ID which has the content 'SHOWS' and produces the following
+                    result:<br>
+                    <img src="../codeexamples/eg2.png">
+                </div>
+                <li><i>Selecting by class- </i></li>
+                <p>To select an element by class, the '.' symbol followed by the class
+                    name is used in the stylesheet. This is used when all the elements with the specified class name
+                    have to be styled.<br>Note : it's not necessary for the classes to have the same element tags
+                    (Eg: h3, div, h4, etc.). The classes can be used in various elements.<br>Understanding using an
+                    example:<br>
+                </p>
+                <div class="code">
+                    <code>
+                        .red {
+                            color: red;
+                        }
+                    </code><br><br>
+                    The above code selects the elements which have the class name as 'red' and produces the following
+                    result:<br><br>
+                    <img src="../codeexamples/eg3.png">
+                </div>
+
+                <p>Now if you want a particular class of a particular tag to be selected, you can do that by giving
+                    tagname, followed by '.' , followed by class name.<br>Understanding using an example:<br></p>
+                </p>
+                <div class="code">
+                    <code>
+                        li.red {
+                            color: red;
+                        }
+                    </code><br><br>
+                    The above code selects the element which has the class name as 'red' and tag name as 'li' and
+                    produces the following
+                    result:<br><br>
+                    <img src="../codeexamples/eg4.png">
+                </div>
+                <li><i>Universal selector- </i></li>
+                <p>To give a particular style in all the tag names, the universal
+                    selector which is denoted by '*' is used.<br>Understanding using an example:<br></p>
+                <div class="code">
+                    <code>
+                        * {
+                            background-color: lightgrey;
+                        }
+                    </code><br><br>
+                    The above code selects the entire document and produces the following result:<br><br>
+                    <img src="../codeexamples/eg5.png">
+                </div>
+                <li><i>Grouping selectors- </i></li>
+                <p>If you want to apply the same styling to various elements, you can group them using commas ','.
+                    <br>Understanding using an example:<br>
+                </p>
+                <div class="code">
+                    <code>
+                        .B99, .friends {
+                            color: violet;
+                        }
+                    </code><br><br>
+                    The above code selects the contents of both the divs which have the classes - 'B99' and 'friends'
+                    and produces the following result:<br><br>
+                    <img src="../codeexamples/eg6.png">
+                </div>
+            </ol>
+            <b>2. The combination selectors - they select the tag based on a relationship with the other
+                tags.</b><br><br>
+            <ol type="i">
+                <li><i>Descendant selector- </i></li>
+                <p>This selects all elements that are children of a specified element. These elements need not
+                    necessarily be direct children of the parent elements. <br>Understanding using an example: <br>
+                </p>
+                <div class="code">
+                    <code>
+                        #sitcoms p {
+                            color: olivedrab;
+                        }
+                    </code><br><br>
+                    The above code selects the contents of all the p tags which come under the sitcoms id division.
+                    Note that "This is a new para" which is outside the sitcoms id division is not selected. It
+                    produces the following result:<br><br>
+                    <img src="../codeexamples/eg7.png">
+                </div>
+                <li><i>Direct child selector- </i></li>
+                <p>This selects all elements that are DIRECT children of a specified element. The selectors can be in
+                    the form of tag names, class names or IDs.<br>Understanding using an example:<br>
+                </p>
+                <div class="code">
+                    <code>
+                        #sitcoms > p {
+                            color: olivedrab;
+                        }
+                    </code><br><br>
+                    The above code selects the contents of all only the direct p tags which come under the sitcoms id
+                    division. Note that the p tags which come under divisions 'B99' and 'friends' is not selected since
+                    they are not directly children of the parent element (division with id sitcoms). It
+                    produces the following result:<br><br>
+                    <img src="../codeexamples/eg8.png">
+                </div>
+                <li><i>Adjacent sibling selector- </i></li>
+                <p>This selector selects the element which is directly after the element specified.
+                    <br>Understanding using an example:<br>
+                </p>
+                <div class="code">
+                    <code>
+                        .B99 + p {
+                            background-color: yellow;
+                        }
+                    </code><br><br>
+                    The above code selects the contents of the p tag which come directly after the div tag which has the
+                    class B99. Note that the p tags which come under this div tag are not selected. It
+                    produces the following result:<br><br>
+                    <img src="../codeexamples/eg9.png">
+                </div>
+                <div class="code">
+                    <code>
+                        div + p {
+                            background-color: yellow;
+                        }
+                    </code><br><br>
+                    The above code selects the contents of the p tag which come directly after the divs tag. Note that
+                    the p tags which come under this div tag are not selected. It produces the following result:<br><br>
+                    <img src="../codeexamples/eg10.png">
+                </div>
+            </ol>
+            <b>3. The pseudo class selector- This helps to select a particular child of the parent element. This also
+                helps to select a particular state of the element. </b><br><br>
+            <ol type="i">
+                <li><i>:hover- </i></li>
+                <p>These are used in various elements. Changes the style when the user hovers the mouse on the
+                    particular element. <br>Understanding using an example:<br>
+                </p>
+                <div class="code">
+                    <code>
+                        a:hover {
+                            color: orange;
+                        }
+                    </code><br><br>
+                    The above code changes the colour of the link when the mouse is hovered on top of it and produces
+                    the following result:<br>
+                    <img src="../codeexamples/eg11.png"><br>
+                    When the mouse is not hovering the link:<br>
+                    <img src="../codeexamples/eg12.png">
+                </div>
+                <li><i>:link, :visited, :active-</i></li>
+                <p>These are used by the anchor tag to differentiate between the different states.<br>Understanding
+                    using an example:
+                </p>
+                <div class="code">
+                    <code>
+                        a:visited {
+                            color: red;
+                        }
+                    </code><br><br>
+                    The above code changes the colour of the link when the link is visited once and produces
+                    the following result:<br>
+                    <img src="../codeexamples/eg13.png"><br>
+                    When the link is not visited:<br>
+                    <img src="../codeexamples/eg12.png">
+                </div>
+                <li><i>:first-child, :last-child-</i></li>
+                <p>They are are used to select the first child and last child element respectively.<br>Understanding
+                    using an example:
+                </p>
+                <div class="code">
+                    <code>
+                        p:first-child {
+                            color: blue;
+                        }
+                    </code><br><br>
+                    The above code selects the p elements which come first under the parent element. Note: 'Brooklyn
+                    Nine Nine' is selected because it's the first p tag under #sitcoms division, 'Gina Linetti is the
+                    human version of the 100 emoji.' and 'Joey doesn't share food' are selected because they are the
+                    first p tags under .B99 and .friends classes respectively.<br>Also, for the p tag to be selected, it
+                    has to be the first element of the respective parent. If there's another element before the first p
+                    tag, it doesn't get selected. The above code produces the following result:<br><br>
+                    <img src="../codeexamples/eg14.png"><br><br>
+                    Homework- Explore :last-child. The working is similar to :first-child.
+                </div><br>
+                <li><i>:nth-child(), :nth-last-child()-</i></li>
+                <p>They are used to select the nth number of child element from the start and nth number of child
+                    element from the end respectively. The number of the position should be specified in the
+                    brackets.<br>Understanding using an example:<br>
+                </p>
+                <div class="code">
+                    <code>
+                        li:nth-child(3) {
+                            background-color: teal;
+                        }
+                    </code><br><br>
+                    The above code selects the third li tag and produces the following result:<br>
+                    <img src="../codeexamples/eg15.png">
+                </div>
+                <p>Note: To select every alternate element, you can specify 2n (even numbered elements) or 2n+1 (odd
+                    numbered elements) accordingly. <br>Understanding using
+                    an example:</p>
+                </p>
+                <div class="code">
+                    <code>
+                        li:nth-child(2n) {
+                            background-color: teal;
+                        }
+                    </code><br><br>
+                    The above code selects the second and fourth li elements and produces the following result:<br>
+                    <img src="../codeexamples/eg16.png">
+                </div>
+            </ol>
+            <b>4. The pseudo element selector- These are used to specifically style a particular part of the
+                element.</b> <br>Note- these are specified by double colon (::), unlike pseudo classes which use single
+            colon (:) <br><br>
+            <ol type="i">
+                <li><i>::first-line- </i></li>
+                <p>Changes the first line of every element specified. Used mostly in paragraphs</p>
+                <li><i>::first-letter- </i></li>
+                <p>Changes the first letter of every element specified. <br>Understanding using an example:
+                </p>
+                <div class="code">
+                    <code>
+                        li::first-letter {
+                            color: white;
+                            background-color: black;
+                        }
+                    </code><br><br>
+                    The above code selects the first letter of all the li tags and produces the following result:<br>
+                    <img src="../codeexamples/eg17.png">
+                </div>
+            </ol>
+        </div>
+        <p style="color: var(--primary-color); font-size: 110%;"><b>Let's see how well you've understood CSS selectors.
+                Take a quiz to test your knowledge 💡</b></p><br>
+        <div class="text-center"><a class="link-primary text-white" style="margin-left: 0;" href="cssselectorquiz.html"
+                target="_blank">Take
+                quiz now!</a><br><br><br></div>
+        <p>If your score isn't up to the mark, make sure to go through the concepts again and keep practising! </p><br>
+    </div>
+
+</body>
+
+</html>

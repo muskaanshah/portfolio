@@ -104,6 +104,20 @@ small {
 	font-size: 120%;
 }
 
+code {
+	border: 1px solid var(--primary-color);
+	color: black;
+	padding: 1%;
+}
+
+.code {
+	margin: 1% 7%;
+}
+
+i {
+	color: var(--primary-color);
+	font-weight: 600;
+}
 @keyframes type {
 	0% {
 		width: 0ch;
