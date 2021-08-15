@@ -63,6 +63,11 @@ h3 {
 	margin-left: 25%;
 }
 
+.link-secondary:hover {
+	text-decoration: underline;
+	color: var(--primary-color);
+}
+
 .link-primary1 {
 	color: white;
 	background-color: var(--primary-color);
